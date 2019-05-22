@@ -14,6 +14,7 @@ public class SolutionTest {
         assertEquals(21, s.reverse(120));
         assertEquals(21, s.reverse(1200));
         assertEquals(201, s.reverse(10200));
+        //2147483647  --> 7463847412溢出
         assertEquals(0, s.reverse(Integer.MAX_VALUE));
         assertEquals(0, s.reverse(Integer.MIN_VALUE));
     }
