@@ -19,5 +19,7 @@ public class SolutionTest {
         assertEquals(4193, s.myAtoi("4193 with words"));
         assertEquals(0, s.myAtoi("words and 987"));
         assertEquals(Integer.MIN_VALUE, s.myAtoi("-91283472332"));
+        assertEquals(0, s.myAtoi("+-2"));
+        assertEquals(0, s.myAtoi("-+2"));
     }
 }

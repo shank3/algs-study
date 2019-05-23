@@ -9,14 +9,14 @@ public class Solution {
         int i = 0, j = 0, len = str.length();
         boolean negative = false;
         for (i = 0; i < len; i++) {
-            if (str.charAt(i) == '-' || str.charAt(i) == '+') {
-                negative = str.charAt(i) == '-';
-            } else if (str.charAt(i) == ' ') {
-                continue;
-            } else if (str.charAt(i) < '0' || '9' < str.charAt(i)) {
-                return 0;
-            } else if ('0' <= str.charAt(i) && str.charAt(i) <= '9') {
+            if ('0' <= str.charAt(i) && str.charAt(i) <= '9') {
                 break;
+            } else if (str.charAt(i) == '-' || str.charAt(i) == '+') {
+                negative = str.charAt(i) == '-';
+                i++;
+                break;
+            } else if (str.charAt(i) != ' ') {
+                return 0;
             }
         }
         for (j = i; j < len; j++) {
