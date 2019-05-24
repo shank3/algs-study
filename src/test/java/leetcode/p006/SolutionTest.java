@@ -10,10 +10,10 @@ public class SolutionTest {
     public void convert() {
         Solution s = new Solution();
         String hello = s.convert("helloworld", 3);
-        System.out.println(hello);
+//        System.out.println(hello);
         assertEquals("holelwrdlo", hello);
         String convert = s.convert("hello", 7);
-        System.out.println(convert);
+//        System.out.println(convert);
         assertEquals("hello", convert);
     }
 }

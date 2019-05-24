@@ -13,7 +13,7 @@ public class Solution {
      * @return
      */
     public boolean isMatch(String s, String p) {
-        System.out.println("text:" + s + ", pattern:" + p);
+//        System.out.println("text:" + s + ", pattern:" + p);
         if (p.isEmpty()) return s.isEmpty();
         //第一个字符是否匹配
         boolean firstMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.');
