@@ -16,4 +16,16 @@ public class SolutionTest {
         assertFalse(s.isMatch("mississippi", "miss*is*p"));
         assertTrue(s.isMatch("mississippi", "mis*is*ip*."));
     }
+
+
+    @Test
+    public void isMatch2() {
+        Solution s = new Solution();
+        assertFalse(s.isMatch2("aa", "a"));
+        assertTrue(s.isMatch2("aa", "a*"));
+        assertTrue(s.isMatch2("ab", ".*"));
+        assertTrue(s.isMatch2("aab", "c*a*b"));
+        assertFalse(s.isMatch2("mississippi", "miss*is*p"));
+        assertTrue(s.isMatch2("mississippi", "mis*is*ip*."));
+    }
 }
