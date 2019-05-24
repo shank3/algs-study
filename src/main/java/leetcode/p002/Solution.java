@@ -2,7 +2,7 @@ package leetcode.p002;
 
 public class Solution {
 
-    class ListNode {
+    static class ListNode {
       int val;
       ListNode next;
       ListNode(int x) { val = x; }

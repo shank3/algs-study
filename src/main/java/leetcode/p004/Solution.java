@@ -1,6 +1,12 @@
 package leetcode.p004;
 
 public class Solution {
+    /**
+     * 寻找两个有序数组的中位数
+     * @param nums1
+     * @param nums2
+     * @return
+     */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length, n = nums2.length, left = (m + n + 1)/2, right = (m+n+2)/2;
         return (findKth(nums1, 0, nums2, 0, left) + findKth(nums1, 0, nums2, 0, right))/2;

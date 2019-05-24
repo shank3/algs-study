@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
+    /**
+     * 无重复字符的最长子串
+     */
     public int lengthOfLongestSubstring(String s) {
         int n = s.length(), ans = 0;
         Map<Character,Integer> m = new HashMap<Character, Integer>();
