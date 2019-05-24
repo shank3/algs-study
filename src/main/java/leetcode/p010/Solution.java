@@ -2,6 +2,10 @@ package leetcode.p010;
 
 public class Solution {
 
+    //参考 https://cloud.tencent.com/developer/article/1398861
+
+    
+
     /**
      * 字符串匹配
      * @param s 字符串
