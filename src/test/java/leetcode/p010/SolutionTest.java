@@ -14,5 +14,6 @@ public class SolutionTest {
         assertTrue(s.isMatch("ab", ".*"));
         assertTrue(s.isMatch("aab", "c*a*b"));
         assertFalse(s.isMatch("mississippi", "miss*is*p"));
+        assertTrue(s.isMatch("mississippi", "mis*is*ip*."));
     }
 }
