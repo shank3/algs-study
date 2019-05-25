@@ -6,12 +6,15 @@ package leetcode.p011;
 public class Solution {
 
     public int maxArea(int[] height) {
-        int max = 0;
-        for (int i = 0; i <= height.length - 2; i++) {
-            for (int j = i+1; j < height.length; j++) {
-                int s = (j - i) * (height[j] > height[i] ? height[i] : height[j]);
-                max = max < s ? s : max;
+        int max = 0, l = 0, r = height.length - 1;
+        while (l < r) {
+            int s = (r - l) * (height[r] > height[l] ? height[l] : height[r]);
+            if (height[r] > height[l]) {
+                l++;
+            } else {
+                r--;
             }
+            max = max < s ? s : max;
         }
         return max;
     }
