@@ -1,12 +1,8 @@
 package leetcode.p002;
 
-public class Solution {
+import leetcode.ListNode;
 
-    static class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
-    }
+public class Solution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
