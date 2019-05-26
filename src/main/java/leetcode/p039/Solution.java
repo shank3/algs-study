@@ -1,11 +1,11 @@
-package leetcode.p035;
+package leetcode.p039;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * 35.组合总和
+ * 39.组合总和
  */
 public class Solution {
 
