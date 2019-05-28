@@ -5,7 +5,15 @@ package leetcode.p055;
  */
 public class Solution {
     public boolean canJump(int[] nums) {
-        return canJumpFrom(0, nums);
+        int n = nums.length;
+        int last = n - 1;
+        for (int i = last; i >= 0; i--) {
+            if (i + nums[i] >= last) {
+                last = i;
+            }
+        }
+        return last == 0;
+//        return canJumpFrom(0, nums);
     }
 
     private boolean canJumpFrom(int pos, int[] nums) {
@@ -20,6 +28,8 @@ public class Solution {
         }
         return false;
     }
+
+
 
 
 }
