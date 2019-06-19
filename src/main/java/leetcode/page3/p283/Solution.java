@@ -19,7 +19,7 @@ public class Solution {
         }
     }
 
-    public void moveZeroes_v1(int[] nums) {
+    public void moveZeroes1(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] == 0) {
                 int j = i+1;
