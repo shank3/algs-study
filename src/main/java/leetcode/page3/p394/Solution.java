@@ -9,6 +9,7 @@ public class Solution {
         int left = 0,right = 0,index = 0;
         int repeat = 1;
         while (left < s.length() && right < s.length()) {
+            //FIXME 字符串编码 未完成
             while (s.charAt(left) != '[') {
                 left++;
             }

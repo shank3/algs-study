@@ -18,9 +18,9 @@ public class SolutionTest {
         s.rotate(matrix);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.printf(matrix[i][j] + " ");
+//                System.out.printf(matrix[i][j] + " ");
             }
-            System.out.println();
+//            System.out.println();
         }
 
     }
