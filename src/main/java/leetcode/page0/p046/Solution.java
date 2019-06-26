@@ -20,7 +20,7 @@ public class Solution {
     }
 
     private void backtrack(List<List<Integer>> all, List<Integer> list, int length, int cur) {
-        System.out.println(list);
+//        System.out.println(list);
         if (cur == length) {
             all.add(new ArrayList<Integer>(list));
         }
