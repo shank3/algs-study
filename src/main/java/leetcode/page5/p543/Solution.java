@@ -8,7 +8,8 @@ import leetcode.TreeNode;
 public class Solution {
     int max = 0;
     public int diameterOfBinaryTree(TreeNode root) {
-        return maxDep(root);
+        maxDep(root);
+        return max;
     }
 
     private int maxDep(TreeNode root) {
