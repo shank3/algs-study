@@ -11,5 +11,6 @@ public class SolutionTest {
         Solution s = new Solution();
         assertEquals(3, s.divide(10, 3));
         assertEquals(-2, s.divide(7, -3));
+        assertEquals(-1073741824, s.divide(-2147483648,2));
     }
 }
