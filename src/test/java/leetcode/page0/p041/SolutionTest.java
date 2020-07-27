@@ -14,5 +14,7 @@ public class SolutionTest {
         assertEquals(4, s.firstMissingPositive(new int[]{1,2,3}));
         assertEquals(4, s.firstMissingPositive(new int[]{2,3,1}));
         assertEquals(2, s.firstMissingPositive(new int[]{0,3,1}));
+        assertEquals(2, s.firstMissingPositive(new int[]{3,4,-1,1}));
+        assertEquals(1, s.firstMissingPositive(new int[]{7,8,9,10}));
     }
 }
