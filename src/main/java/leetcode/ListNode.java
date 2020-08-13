@@ -6,8 +6,16 @@ package leetcode;
 public class ListNode {
     public int val;
     public ListNode next;
+    public ListNode(int val) { this.val = val; }
+    public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 
-    public ListNode(int x) {
-        val = x;
+    public String print() {
+        String s = val + " -> ";
+        ListNode n = next;
+        while (n != null) {
+            s += n.val + (n.next == null ? "" : " -> ");
+            n = n.next;
+        }
+        return s;
     }
 }
